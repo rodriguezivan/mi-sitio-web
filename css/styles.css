@@ -1,0 +1,327 @@
+/* 
+    Created on : 01-nov-2016, 16:01:10
+    Author     : Iván Rodriguez
+*/
+html, body{
+    height: 100%;
+    width: 100%;
+}
+/***** GENERAL *****/
+.titulo-seccion{
+    font-size: 28px;
+    color: #ffffff;  
+    text-align: center;
+    padding-top: 25px;
+}
+.titulo-seccion-oscuro{
+    font-size: 28px;
+    color: #333333;  
+    text-align: center;
+    padding-top: 25px;
+}
+.linea-titulo{
+    width: 100px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 2px solid #ffffff;
+}
+.linea-titulo-oscuro{
+    width: 100px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 2px solid #D2D2D3;
+}
+.margin-bottom{
+    margin-bottom: 30px;
+}
+.centrado{
+    text-align: center;
+}
+.no-margin-bottom{
+    bottom: -30px;
+}
+.portfolio-link{
+    display: block;
+    position: relative;
+    max-width: 400px;
+    margin: 0 auto;
+}
+.portfolio-capa{
+    background: #1B9EB2;
+    position: absolute;
+    width: 100%;
+    height: 100%;   
+    opacity: 0;
+    transition: all ease .5s;
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+}
+.portfolio-link .portfolio-capa:hover{
+    opacity: 0.9;
+}
+.portfolio-content{
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    font-size: 20px;
+    text-align: center;
+    top: 50%;
+    margin-top: -12px;
+    color: #fff;
+}
+.portfolio-content i{
+    margin-top: -12px;
+}
+/***** NAVBAR *****/
+.menu{
+    background-color: transparent !important;    
+    padding-top: 20px !important;
+    padding-bottom: 0px !important;
+    border: none;
+}
+.menu-visible{
+    background-color: #fafafa !important;
+    opacity: 0.9;  
+}
+.logo{    
+    font-size: 32px !important;
+    font-weight: bold;
+    color: #ffffff !important; 
+}
+.item-active a{
+    color: #1B9EB2 !important;   
+    background-color: transparent !important;
+    font-weight: bold;
+    border-bottom: solid 3px #1B9EB2;       
+}
+.menu ul li a{
+    color: #ffffff !important;    
+    padding-bottom: 0px !important;
+    padding-left: 7px;
+    padding-right: 7px;
+    margin-left: 25px;
+    font-size: 16px !important;
+    
+}
+.menu-visible ul li a{
+    color: #333333 !important;    
+    padding-bottom: 0px !important;
+    padding-left: 7px;
+    padding-right: 7px;
+    margin-left: 25px;
+    font-size: 16px !important;
+    
+}
+.menu-visible .logo{
+    color: #373839 !important;
+}
+/***** HOME *****/
+#home{
+    width: 100%;
+    height: 100%;
+    background: url('../img/sources/background-home.jpg') center top;
+    background-position: 50% 0px;
+}
+.slider-home{    
+    width: 100%;
+    top: 35%;
+    position: absolute;
+    text-align: center;
+    color: #ffffff;
+}
+.slider-home h1{
+    font-weight: 700;
+    font-size: 6rem;
+}
+.slider-home h3{
+    font-size: 2.5rem;
+}
+.slider-home hr{
+    width: 20%;
+    border-top: 5px solid #1B9EB2;
+}
+/***** SOBRE MI *****/
+#sobre-mi{
+    background-color: #1B9EB2;
+    width: 100%;
+    position: relative;    
+    padding-bottom: 30px;
+}
+#sobre-mi::after{
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    z-index: 999;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: transparent;
+    border-top-color: #1B9EB2;
+    border-width: 20px;
+    margin-left: -20px;
+}
+.img-perfil{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 110px;
+}
+.redaccion-sobre-mi{
+    text-align: center;
+    color: #ffffff;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 18px;
+}
+/***** TRABAJOS *****/
+#trabajos{
+    width: 100%;   
+    background: url('../img/sources/one.png');
+    position: relative;
+    padding-bottom: 45px;
+}
+.redaccion-trabajos{
+    text-align: center;
+    color: #333333;    
+    padding-bottom: 25px;
+    font-size: 18px;
+}
+/***** BANNER *****/
+#banner{
+    width: 100%;      
+    background: url('../img/sources/banner.jpg');   
+}
+.redaccion-banner{
+    text-align: center;
+    color: #ffffff;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    font-size: 18px;
+}
+.btn-banner{
+    color: #ffffff;
+    border: solid 2px #ffffff;
+    padding: 8px;
+    border-radius: 15px;
+    text-decoration: none;
+}
+.btn-banner:hover{
+    text-decoration: none;
+    color: #ffffff;
+}
+/***** SERVICIOS *****/
+#servicios{
+    width: 100%;
+    background-color: #FAFAFA;
+    position: relative;
+    padding-bottom: 30px;
+}
+#servicios::after{
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    z-index: 999;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: transparent;
+    border-top-color: #FAFAFA;
+    border-width: 20px;
+    margin-left: -20px;
+}
+.cont-servicio{
+    background-color: #F3F3F3;        
+    padding-top: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+}
+.icono-servicio{
+    color: #FAFAFA;
+    background-color: #1B9EB2;
+    font-size: 48px;
+    border: solid 4px #D2D2D3;    
+    border-radius: 50%;
+    padding-top: 35px;
+    padding-bottom: 30px;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+/***** UBICACION *****/
+#mapa{
+    height: 350px;
+    width: 100%;
+}
+/***** CONTACTO *****/
+#contacto{
+    width: 100%;
+    position: relative;
+    background-color: #FAFAFA;
+    padding-bottom: 20px;
+}
+#contacto::after{
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    z-index: 999;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: transparent;
+    border-top-color: #FAFAFA;
+    border-width: 20px;
+    margin-left: -20px;
+}
+.redaccion-contacto{
+    text-align: center;
+    color: #333333;    
+    padding-bottom: 25px;
+    font-size: 18px;
+}
+.btn-contacto{
+    background-color: #1B9EB2;
+    color: #ffffff;
+    width: 100px;
+    border-radius: 12px;
+}
+/***** SOCIAL *****/
+#social{
+    background-color: #1B9EB2;
+    width: 100%;
+    height: 30%;
+    position: relative;
+    text-align: center;
+}
+#social::after{
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    z-index: 999;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: transparent;
+    border-top-color: #1B9EB2;
+    border-width: 20px;
+    margin-left: -20px;
+}
+#social h4{
+    color: #ffffff;
+    font-size: 20px;
+}
+/***** FOOTER *****/
+#footer{
+    width: 100%;
+    background-color: #373839;
+    text-align: center;
+    color: #ffffff;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
