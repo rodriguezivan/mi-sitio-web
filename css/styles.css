@@ -2,9 +2,12 @@
     Created on : 01-nov-2016, 16:01:10
     Author     : Iván Rodriguez
 */
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
 html, body{
     height: 100%;
     width: 100%;
+    font-family: 'Ubuntu';
 }
 /***** GENERAL *****/
 .titulo-seccion{
@@ -172,7 +175,7 @@ html, body{
     color: #ffffff;
     padding-top: 25px;
     padding-bottom: 25px;
-    font-size: 18px;
+    font-size: 20px;
 }
 /***** TRABAJOS *****/
 #trabajos{
@@ -216,6 +219,7 @@ html, body{
     background-color: #FAFAFA;
     position: relative;
     padding-bottom: 30px;
+    /*border-bottom: 5px solid #1B9EB2;*/
 }
 #servicios::after{
     top: 100%;
@@ -233,11 +237,16 @@ html, body{
     margin-left: -20px;
 }
 .cont-servicio{
-    background-color: #F3F3F3;        
+    background-color: #F3F3F3;
     padding-top: 40px;
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 15px;
+    border-top: 1px solid #eaeaea;
+    border-left: 1px solid #eaeaea;
+    border-right: 1px solid #eaeaea;
+    border-bottom: 4px solid #1B9EB2;
+    border-radius: 3px;
 }
 .icono-servicio{
     color: #FAFAFA;
@@ -260,6 +269,7 @@ html, body{
     width: 100%;
     position: relative;
     background-color: #FAFAFA;
+    background: url('../img/sources/one.png');
     padding-bottom: 20px;
 }
 #contacto::after{
@@ -273,7 +283,7 @@ html, body{
     position: absolute;
     pointer-events: none;
     border-color: transparent;
-    border-top-color: #FAFAFA;
+    /*border-top-color: #FAFAFA;*/
     border-width: 20px;
     margin-left: -20px;
 }
@@ -312,9 +322,10 @@ html, body{
     border-width: 20px;
     margin-left: -20px;
 }
-#social h4{
+#social h4 a {
     color: #ffffff;
-    font-size: 20px;
+    font-size: 22px;
+    text-decoration: none;
 }
 /***** FOOTER *****/
 #footer{
