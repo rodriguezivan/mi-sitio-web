@@ -1,408 +1,429 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Diseño y Desarrollo Web</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/bootstrap.css"/>
-        <link rel="stylesheet" href="css/styles.css"/>
-        <link rel="stylesheet" href="css/animate.css"/>
-        <link rel="stylesheet" href="fonts/fontawesome/css/all.css"/>
-        
-        <script type="text/javascript" src="js/libs/bootstrap/bootstrap.js"></script>
-        <script type="text/javascript" src="js/libs/bootstrap/transition.js"></script>        
-        <script type="text/javascript" src="js/libs/bootstrap/carousel.js"></script>
-        <script type="text/javascript" src="js/libs/bootstrap/modal.js"></script>
-        <script type="text/javascript" src="js/libs/jquery/jquery-3.1.1.js"></script>
-        <script type="text/javascript" src="js/functions/scripts.js"></script>        
-    </head>
-    <body>     
-        <!---------- NAVBAR ---------->
-        <nav id="nav-menu" class="navbar navbar-default navbar-fixed-top menu">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand logo" href="#">Iván Rodriguez</a>
-                </div>
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="active item-active"><a href="#">Inicio <span class="sr-only">(current)</span></a></li>
-                        <li><a href="#sobre-mi">Sobre mi</a></li>     
-                        <li><a href="#trabajos">Trabajos</a></li>  
-                        <li><a href="#servicios">Servicios</a></li>  
-                        <li><a href="#contacto">Contacto</a></li>  
-                    </ul>
-                </div>
+
+<head>
+    <title>Diseño y Desarrollo Web</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="fonts/fontawesome/css/all.css" />
+
+    <!--<script type="text/javascript" src="js/libs/jquery/jquery-3.1.1.js"></script>-->
+    <script src="https://code.jquery.com/jquery-2.2.4.js"
+        integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="js/libs/animatescroll/animatescroll.js"></script>
+    <script type="text/javascript" src="js/libs/bootstrap/bootstrap.js"></script>
+    <script type="text/javascript" src="js/libs/bootstrap/transition.js"></script>
+    <script type="text/javascript" src="js/libs/bootstrap/carousel.js"></script>
+    <script type="text/javascript" src="js/libs/bootstrap/modal.js"></script>
+    <script type="text/javascript" src="js/functions/scripts.js"></script>
+</head>
+
+<body>
+    <!---------- NAVBAR ---------->
+    <nav id="nav-menu" class="navbar navbar-default navbar-fixed-top menu">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand logo">Iván Rodriguez</a>
             </div>
-        </nav>        
-        <!---------- HOME ---------->
-        <header id="home">            
-            <div class="slider-home">
-                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators no-margin-bottom">
-                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                    </ol>
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner" role="listbox">
-                        <div class="item active">                            
-                            <h1>Soy Iván Rodriguez</h1>
-                            <hr/>
-                            <h3>Diseñador y Desarrollador Web</h3>
-                        </div>
-                        <div class="item"> 
-                            <h1>Desarrollo Sitios Webs</h1>
-                            <hr/>
-                            <h3>Adaptables a todos los dispositivos</h3>
-                        </div>     
-                        <div class="item"> 
-                            <h1>Contactame</h1>
-                            <hr/>
-                            <h3>Puedo hacer que tu negocio crezca</h3>
-                        </div>  
-                    </div>                   
-                </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li id="item-home" class="active item-active"><a id="ir-inicio">Inicio <span class="sr-only">(current)</span></a></li>
+                    <li id="item-sobre-mi"><a id="ir-sobre-mi">Sobre mi</a></li>
+                    <li id="item-trabajos"><a id="ir-trabajos">Trabajos</a></li>
+                    <li id="item-servicios"><a id="ir-servicios">Servicios</a></li>
+                    <li id="item-contacto"><a id="ir-contacto">Contacto</a></li>
+                </ul>
             </div>
-        </header>
-        <!---------- SOBRE MI ---------->
-        <section id="sobre-mi">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h2 class="titulo-seccion">Bienvenido</h2>
-                        <hr class="linea-titulo"/>
+        </div>
+    </nav>
+    <!---------- HOME ---------->
+    <header id="home">
+        <div class="slider-home">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators no-margin-bottom">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <h1>Soy Iván Rodriguez</h1>
+                        <hr />
+                        <h3>Diseñador y Desarrollador Web</h3>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-5" style="padding-right: 0px;">
-                        <hr style="float: right;width: 75%;margin-top: 50px;"/>
+                    <div class="item">
+                        <h1>Desarrollo Sitios Webs</h1>
+                        <hr />
+                        <h3>Adaptables a todos los dispositivos</h3>
                     </div>
-                    <div class="col-md-2">                                                
-                        <img src="img/sources/perfil.jpg" class="img-responsive img-circle img-perfil"/>
-                    </div>
-                    <div class="col-md-5" style="padding-left: 0px;">
-                        <hr style="float: left;width: 75%;margin-top: 50px;"/>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                            <p class="redaccion-sobre-mi">
-                                    <i class="fa fa-quote-left fa-lg" aria-hidden="true"></i>
-                                    Bienvenid@, mi nombre es Iván Rodriguez. Vivo en San Luis, Argentina. <br>
-                                    Soy Técnico en Desarrollo de Software  y futuro Licenciado en Informática. <br>
-                                    Me dedico puntualmente al Diseño y Desarrollo Web. <br>
-                                    Creo sitios webs siguiendo las últimas tendencias a nivel mundial, para lograr sitios modernos, creativos y originales.<br>
-                                    Mi principal objetivo es que tu negocio crezca y que sea reconocido en la web.  Brindo soluciones a medida diseñando
-                                    y desarrollando la web que vos necesitás. 
-                                    Encontrarás más abajo, mis últimos trabajos realizados y más información sobre mi.<i class="fa fa-quote-right fa-lg" aria-hidden="true"></i><br><br>
-                                    ¡Muchas gracias por su visita!                            
-                                </p>                        
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!---------- TRABAJOS ---------->
-        <section id="trabajos">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h2 class="titulo-seccion-oscuro">Proyectos y trabajos</h2>
-                        <hr class="linea-titulo-oscuro"/>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <p class="redaccion-trabajos">
-                            Algunos de los últimos proyectos en que trabajé
-                        </p>
-                    </div>
-                </div>
-                <div class="row margin-bottom">
-                    <div class="col-md-4">
-                        <a href="#" class="portfolio-link">
-                            <div class="portfolio-capa">
-                                <div class="portfolio-content">
-                                    <i class="fa fa-search-plus fa-3x"></i>
-                                </div>
-                            </div>
-                           <img class="img-responsive" src="img/trabajos/01.png" alt=""/> 
-                        </a>                        
-                    </div>
-                     <div class="col-md-4">
-                        <img class="img-responsive" src="img/trabajos/02.png" alt=""/>
-                    </div>
-                     <div class="col-md-4">
-                        <img class="img-responsive" src="img/trabajos/03.png" alt=""/>
-                    </div>
-                </div>
-                <div class="row margin-bottom">
-                    <div class="col-md-4">
-                        <img class="img-responsive" src="img/trabajos/04.png" alt=""/>
-                    </div>
-                     <div class="col-md-4">
-                        <img class="img-responsive" src="img/trabajos/05.png" alt=""/>
-                    </div>
-                     <div class="col-md-4">
-                        <img class="img-responsive" src="img/trabajos/06.png" alt=""/>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!---------- BANNER ---------->
-        <section id="banner">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h2 class="titulo-seccion">¡SACATE TODAS LAS DUDAS!</h2>
-                        <hr class="linea-titulo"/>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <p class="redaccion-banner">Si tenés una idea no dudes en consultarme, brindo asesoramiento sin cargo.</p>
-                    </div>
-                </div>
-                <div class="row margin-bottom">
-                    <div class="col-md-12" style="text-align: center;">
-                        <a class="btn-banner" href="#contacto">Contactame!</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!---------- SERVICIOS ---------->
-        <section id="servicios">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h2 class="titulo-seccion-oscuro">Servicios</h2>
-                        <hr class="linea-titulo-oscuro"/>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <p class="redaccion-trabajos">
-                            Estos son algunos de los servicios que puedo ofrecerte
-                        </p>
-                    </div>
-                </div>
-                <div class="row margin-bottom">
-                    <div class="col-md-4">
-                        <div class="cont-servicio">
-                            <div class="row">
-                                <div class="col-md-12" style="text-align: center;">
-                                    <a href="#" class="icono-servicio"><span class="glyphicon glyphicon-globe"></span></a>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12" style="text-align: center;padding-top: 20px;">
-                                    <h3>Desarrollo Web</h3>
-                                </div>
-                            </div>                            
-                        </div>
-                    </div>    
-                    <div class="col-md-4">
-                        <div class="cont-servicio">
-                            <div class="row">
-                                <div class="col-md-12" style="text-align: center;">
-                                    <a href="#" class="icono-servicio">
-                                        <span class="glyphicon glyphicon-phone"></span></a>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12" style="text-align: center;padding-top: 20px;">
-                                    <h3>Diseño Web Responsive</h3>
-                                </div>
-                            </div>                            
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="cont-servicio">
-                            <div class="row">
-                                <div class="col-md-12" style="text-align: center;">
-                                    <a href="#" class="icono-servicio"><span class="glyphicon glyphicon-wrench"></span></a>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12" style="text-align: center;padding-top: 20px;">
-                                    <h3>Posicionamiento Web</h3>
-                                </div>
-                            </div>                           
-                        </div>
-                    </div>
-                </div>
-                <div class="row margin-bottom">
-                    <div class="col-md-4">
-                        <div class="cont-servicio">
-                            <div class="row">
-                                <div class="col-md-12" style="text-align: center;">
-                                    <a href="#" class="icono-servicio">
-                                        <span class="glyphicon glyphicon-thumbs-up"></span></a>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12" style="text-align: center;padding-top: 20px;">
-                                    <h3>Redes sociales</h3>
-                                </div>
-                            </div>                            
-                        </div>
-                    </div>    
-                    <div class="col-md-4">
-                        <div class="cont-servicio">
-                            <div class="row">
-                                <div class="col-md-12" style="text-align: center;">
-                                    <a href="#" class="icono-servicio"><span class="glyphicon glyphicon-pencil"></span></a>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12" style="text-align: center;padding-top: 20px;">
-                                    <h3>Administración de contenidos</h3>
-                                </div>
-                            </div>                            
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="cont-servicio">
-                            <div class="row">
-                                <div class="col-md-12" style="text-align: center;">
-                                    <a href="#" class="icono-servicio"><span class="glyphicon glyphicon-envelope"></span></a>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12" style="text-align: center;padding-top: 20px;">
-                                    <h3>Newsletters</h3>
-                                </div>
-                            </div>                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>        
-        <!---------- CONTACTO ---------->
-        <section id="contacto">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h2 class="titulo-seccion-oscuro">Contacto</h2>
-                        <hr class="linea-titulo-oscuro"/>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <p class="redaccion-contacto">
-                            Consulte lo que quiera, respondo a la brevedad.
-                        </p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <form role="form" method="post">
-                            <div class="row margin-bottom">     
-                                <div class="col-md-6">
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="form-group">                                                
-                                                <input type="email" class="form-control" id="ejemplo_email_1"
-                                                       placeholder="Email">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="form-group">                                                
-                                                <input type="text" class="form-control" id="ejemplo_email_1"
-                                                       placeholder="Nombre y apellido">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="form-group">                                                
-                                                <input type="email" class="form-control" id="ejemplo_email_1"
-                                                       placeholder="Asunto">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <textarea class="form-control" placeholder="Mensaje" rows="6"></textarea>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>   
-                            <div class="row margin-bottom">
-                                <div class="col-md-12 centrado">
-                                    <button type="submit" class="btn btn-default btn-large btn-contacto">Enviar!</button>
-                                </div>
-                            </div>
-                        </form>                        
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!---------- SOCIAL ---------->
-        <section id="social">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h2 class="titulo-seccion">Encontrame también en:</h2>
-                        <hr class="linea-titulo"/>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <h4>
-                            <a href="https://github.com/rodriguezivan/" target="_blank"><span class="fab fa-github"></span> rodriguezivan</a>
-                        </h4>                                          
-                    </div>
-                    <div class="col-md-4">
-                        <h4>
-                            <a href="#"><span class="glyphicon glyphicon-phone"></span> 026615 4 792825</a>
-                        </h4>
-                    </div>
-                    <div class="col-md-4">
-                        <h4>
-                            <a href="#"><span class="glyphicon glyphicon-envelope"></span> ivanrodriguez.soft@gmail.com</a>
-                        </h4>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!---------- FOOTER ---------->
-        <footer id="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <p>Desarrollado por Iván Rodriguez.</p>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- Modal -->
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-                    </div>
-                    <div class="modal-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac maximus quam. Fusce auctor rhoncus elit, eu ornare augue pulvinar a. Aenean sit amet orci ut velit pulvinar accumsan ut vel mauris. Praesent aliquet interdum ligula, id varius dui tempor in. Pellentesque eget metus lorem. Vivamus in cursus nisl. Integer auctor augue et bibendum ornare. Mauris nec nisl vel mauris pellentesque molestie. Cras ornare orci vitae mi ornare euismod. Cras volutpat massa sit amet fermentum tempus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut eget vehicula odio, rutrum gravida ipsum. Nam eget auctor massa.</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
+                    <div class="item">
+                        <h1>Contactame</h1>
+                        <hr />
+                        <h3>Puedo hacer que tu negocio crezca</h3>
                     </div>
                 </div>
             </div>
         </div>
-    </body>
+    </header>
+    <!---------- SOBRE MI ---------->
+    <section id="sobre-mi">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="titulo-seccion">Bienvenido</h2>
+                    <hr class="linea-titulo" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-5" style="padding-right: 0px;">
+                    <hr style="float: right;width: 75%;margin-top: 50px;" />
+                </div>
+                <div class="col-md-2">
+                    <img src="img/sources/perfil.jpg" class="img-responsive img-circle img-perfil" />
+                </div>
+                <div class="col-md-5" style="padding-left: 0px;">
+                    <hr style="float: left;width: 75%;margin-top: 50px;" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="redaccion-sobre-mi">
+                        <i class="fa fa-quote-left fa-lg" aria-hidden="true"></i>
+                        Bienvenid@, mi nombre es Iván Rodriguez. Vivo en San Luis, Argentina. <br>
+                        Soy Técnico en Desarrollo de Software y futuro Licenciado en Informática. <br>
+                        Me dedico puntualmente al Diseño y Desarrollo Web. <br>
+                        Creo sitios webs siguiendo las últimas tendencias a nivel mundial, para lograr sitios modernos,
+                        creativos y originales.<br>
+                        Mi principal objetivo es que tu negocio crezca y que sea reconocido en la web. Brindo soluciones
+                        a medida diseñando
+                        y desarrollando la web que vos necesitás.
+                        Encontrarás más abajo, mis últimos trabajos realizados y más información sobre mi.<i
+                            class="fa fa-quote-right fa-lg" aria-hidden="true"></i><br><br>
+                        ¡Muchas gracias por su visita!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---------- TRABAJOS ---------->
+    <section id="trabajos">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="titulo-seccion-oscuro">Proyectos y trabajos</h2>
+                    <hr class="linea-titulo-oscuro" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="redaccion-trabajos">
+                        Algunos de los últimos proyectos en que trabajé
+                    </p>
+                </div>
+            </div>
+            <div class="row margin-bottom">
+                <div class="col-md-4">
+                    <a href="#" class="portfolio-link">
+                        <div class="portfolio-capa">
+                            <div class="portfolio-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img class="img-responsive" src="img/trabajos/01.png" alt="" />
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <img class="img-responsive" src="img/trabajos/02.png" alt="" />
+                </div>
+                <div class="col-md-4">
+                    <img class="img-responsive" src="img/trabajos/03.png" alt="" />
+                </div>
+            </div>
+            <div class="row margin-bottom">
+                <div class="col-md-4">
+                    <img class="img-responsive" src="img/trabajos/04.png" alt="" />
+                </div>
+                <div class="col-md-4">
+                    <img class="img-responsive" src="img/trabajos/05.png" alt="" />
+                </div>
+                <div class="col-md-4">
+                    <img class="img-responsive" src="img/trabajos/06.png" alt="" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---------- BANNER ---------->
+    <section id="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="titulo-seccion">¡SACATE TODAS LAS DUDAS!</h2>
+                    <hr class="linea-titulo" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="redaccion-banner">Si tenés una idea no dudes en consultarme, brindo asesoramiento sin
+                        cargo.</p>
+                </div>
+            </div>
+            <div class="row margin-bottom">
+                <div class="col-md-12" style="text-align: center;">
+                    <a class="btn-banner" href="#contacto">Contactame!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---------- SERVICIOS ---------->
+    <section id="servicios">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="titulo-seccion-oscuro">Servicios</h2>
+                    <hr class="linea-titulo-oscuro" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="redaccion-trabajos">
+                        Estos son algunos de los servicios que puedo ofrecerte
+                    </p>
+                </div>
+            </div>
+            <div class="row margin-bottom">
+                <div class="col-md-4">
+                    <div class="cont-servicio">
+                        <div class="row">
+                            <div class="col-md-12" style="text-align: center;">
+                                <a href="#" class="icono-servicio"><span class="glyphicon glyphicon-globe"></span></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12" style="text-align: center;padding-top: 20px;">
+                                <h3>Desarrollo Web</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="cont-servicio">
+                        <div class="row">
+                            <div class="col-md-12" style="text-align: center;">
+                                <a href="#" class="icono-servicio">
+                                    <span class="glyphicon glyphicon-phone"></span></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12" style="text-align: center;padding-top: 20px;">
+                                <h3>Diseño Web Responsive</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="cont-servicio">
+                        <div class="row">
+                            <div class="col-md-12" style="text-align: center;">
+                                <a href="#" class="icono-servicio"><span class="glyphicon glyphicon-wrench"></span></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12" style="text-align: center;padding-top: 20px;">
+                                <h3>Posicionamiento Web</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row margin-bottom">
+                <div class="col-md-4">
+                    <div class="cont-servicio">
+                        <div class="row">
+                            <div class="col-md-12" style="text-align: center;">
+                                <a href="#" class="icono-servicio">
+                                    <span class="glyphicon glyphicon-thumbs-up"></span></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12" style="text-align: center;padding-top: 20px;">
+                                <h3>Redes sociales</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="cont-servicio">
+                        <div class="row">
+                            <div class="col-md-12" style="text-align: center;">
+                                <a href="#" class="icono-servicio"><span class="glyphicon glyphicon-pencil"></span></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12" style="text-align: center;padding-top: 20px;">
+                                <h3>Administración de contenidos</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="cont-servicio">
+                        <div class="row">
+                            <div class="col-md-12" style="text-align: center;">
+                                <a href="#" class="icono-servicio"><span
+                                        class="glyphicon glyphicon-envelope"></span></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12" style="text-align: center;padding-top: 20px;">
+                                <h3>Newsletters</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---------- CONTACTO ---------->
+    <section id="contacto">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="titulo-seccion-oscuro">Contacto</h2>
+                    <hr class="linea-titulo-oscuro" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="redaccion-contacto">
+                        Consulte lo que quiera, respondo a la brevedad.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <form role="form" method="post">
+                        <div class="row margin-bottom">
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" id="ejemplo_email_1"
+                                                placeholder="Email">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="ejemplo_email_1"
+                                                placeholder="Nombre y apellido">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" id="ejemplo_email_1"
+                                                placeholder="Asunto">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <textarea class="form-control" placeholder="Mensaje" rows="6"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row margin-bottom">
+                            <div class="col-md-12 centrado">
+                                <button type="submit" class="btn btn-default btn-large btn-contacto">Enviar!</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---------- SOCIAL ---------->
+    <section id="social">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="titulo-seccion">Encontrame también en:</h2>
+                    <hr class="linea-titulo" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>
+                        <a href="https://github.com/rodriguezivan/" target="_blank"><span class="fab fa-github"></span>
+                            rodriguezivan</a>
+                    </h4>
+                </div>
+                <div class="col-md-4">
+                    <h4>
+                        <a href="#"><span class="glyphicon glyphicon-phone"></span> 026615 4 792825</a>
+                    </h4>
+                </div>
+                <div class="col-md-4">
+                    <h4>
+                        <a href="#"><span class="glyphicon glyphicon-envelope"></span> ivanrodriguez.soft@gmail.com</a>
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---------- FOOTER ---------->
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>Desarrollado por Iván Rodriguez.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac maximus quam. Fusce auctor
+                        rhoncus elit, eu ornare augue pulvinar a. Aenean sit amet orci ut velit pulvinar accumsan ut vel
+                        mauris. Praesent aliquet interdum ligula, id varius dui tempor in. Pellentesque eget metus
+                        lorem. Vivamus in cursus nisl. Integer auctor augue et bibendum ornare. Mauris nec nisl vel
+                        mauris pellentesque molestie. Cras ornare orci vitae mi ornare euismod. Cras volutpat massa sit
+                        amet fermentum tempus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                        ridiculus mus. Ut eget vehicula odio, rutrum gravida ipsum. Nam eget auctor massa.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
 </html>

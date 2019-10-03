@@ -1,23 +1,8 @@
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-/*$(window).scroll(function(){
-   var scroll_position = $(window).scrollTop();
-   if(scroll_position < 80){
-       $("#nav-menu").removeClass("menu-visible");
-   }
-   if(scroll_position > 80){
-       $("#nav-menu").addClass("menu-visible");
-   }
-});*/
-
-$(document).ready(function(){
-    scrollear();     
+$(document).ready(function(){   
+   scroll();     
  });
  
- $(window).scroll(function(){   
+ $(window).scroll(function(){      
     var scroll_position = $(window).scrollTop();
     var sobre_mi = $("#sobre-mi").offset().top;   
     var trabajos = $("#trabajos").offset().top;
@@ -28,7 +13,8 @@ $(document).ready(function(){
     trabajos -= 250;
     servicios -= 300;
     contacto -= 100;
-    social -= 100;
+    social -= 100;   
+
     if(scroll_position < 80){
         $("#nav-menu").removeClass("menu-visible");
     }
@@ -81,15 +67,15 @@ $(document).ready(function(){
     }   
  });
  
- function scrollear(){
-     $("#ir-contacto").click(function(){
-        $("#contacto").animatescroll({padding: 80, scrollSpeed:1500});        
+ function scroll() {
+     $("#ir-contacto").click(function(){        
+        $("#contacto").animatescroll({padding: 80, scrollSpeed: 1500});                
      });
      $("#ir-servicios").click(function(){
-        $("#servicios").animatescroll({padding: 80, scrollSpeed:1500}); 
+        $("#servicios").animatescroll({padding: 80, scrollSpeed: 1500}); 
      });
      $("#ir-trabajos").click(function(){
-        $("#trabajos").animatescroll({padding: 80, scrollSpeed:1500}); 
+        $("#trabajos").animatescroll({padding: 80, scrollSpeed: 1500}); 
      });
      $("#ir-sobre-mi").click(function(){
         $("#sobre-mi").animatescroll({padding: 80, scrollSpeed:1500}); 
