@@ -181,7 +181,7 @@ html, body{
 /***** TRABAJOS *****/
 #trabajos{
     width: 100%;   
-    background: url('../img/sources/one.png');
+    background-color: #FAFAFA;
     position: relative;
     padding-bottom: 45px;
 }
@@ -216,11 +216,10 @@ html, body{
 }
 /***** SERVICIOS *****/
 #servicios{
-    width: 100%;
-    background-color: #FAFAFA;
+    width: 100%;   
+    background: url('../img/sources/one.png');
     position: relative;
-    padding-bottom: 30px;
-    /*border-bottom: 5px solid #1B9EB2;*/
+    padding-bottom: 30px;    
 }
 #servicios::after{
     top: 100%;
