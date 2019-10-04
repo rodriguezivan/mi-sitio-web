@@ -232,7 +232,7 @@ html, body{
     position: absolute;
     pointer-events: none;
     border-color: transparent;
-    border-top-color: #FAFAFA;
+    border-top-color: #ddd;
     border-width: 20px;
     margin-left: -20px;
 }
@@ -259,6 +259,9 @@ html, body{
     padding-left: 35px;
     padding-right: 35px;
 }
+.icono-servicio:hover {
+    color: #FAFAFA; 
+}
 /***** UBICACION *****/
 #mapa{
     height: 350px;
@@ -283,7 +286,7 @@ html, body{
     position: absolute;
     pointer-events: none;
     border-color: transparent;
-    /*border-top-color: #FAFAFA;*/
+    border-top-color: #ddd;
     border-width: 20px;
     margin-left: -20px;
 }

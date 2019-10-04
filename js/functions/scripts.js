@@ -4,13 +4,11 @@ $(document).ready(function(){
  
  $(window).scroll(function(){      
     var scroll_position = $(window).scrollTop();
-    var sobre_mi = $("#sobre-mi").offset().top;   
-    var trabajos = $("#trabajos").offset().top;
+    var sobre_mi = $("#sobre-mi").offset().top;       
     var servicios = $("#servicios").offset().top;
     var contacto = $("#contacto").offset().top;
     var social = $("#social").offset().top;
-    sobre_mi -= 300;
-    trabajos -= 250;
+    sobre_mi -= 300;    
     servicios -= 300;
     contacto -= 100;
     social -= 100;   
@@ -26,7 +24,7 @@ $(document).ready(function(){
         $("#item-sobre-mi").removeClass("active item-active");
         $("#item-trabajos").removeClass("active item-active");
         $("#item-contacto").removeClass("active item-active");
-        $("#item-servicios").removeClass("active item-active");              
+        $("#item-servicios").removeClass("active item-active");           
     }
     if(scroll_position >= sobre_mi){
         $("#item-sobre-mi").addClass("active item-active");
@@ -36,17 +34,7 @@ $(document).ready(function(){
         $("#item-servicios").removeClass("active item-active");
         
         $("#sobre-mi .container.animado").addClass("animated fadeInUp");       
-    }
-    if(scroll_position >= trabajos){
-       $("#item-trabajos").addClass("active item-active");
-       $("#item-home").removeClass("active item-active"); 
-       $("#item-sobre-mi").removeClass("active item-active"); 
-       $("#item-servicios").removeClass("active item-active");
-       $("#item-contacto").removeClass("active item-active");
-       
-       $("#trabajos .row.margin-bottom.animado.izquierda").addClass("animated fadeInLeft");
-       $("#trabajos .row.margin-bottom.animado.derecha").addClass("animated fadeInRight");
-    }
+    }    
     if(scroll_position >= servicios){
        $("#item-home").removeClass("active item-active"); 
        $("#item-sobre-mi").removeClass("active item-active");
